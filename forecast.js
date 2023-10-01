@@ -8,7 +8,7 @@ const forecast =(lat,lon,callback) =>{
             // console.log(res.body)
             const resdata=JSON.parse(res.body)
             // console.log()
-            callback(undefined,"temperatures is "+resdata.hourly.temperature_2m[0] +resdata.hourly_units.temperature_2m)
+            callback(undefined,"temperature is "+resdata.hourly.temperature_2m[0] +resdata.hourly_units.temperature_2m)
         }
 })
 }

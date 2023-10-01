@@ -10,9 +10,11 @@ const geocode = (address,callback) =>{
         } else{
         const data=res.body;
         const j=JSON.parse(data)
+        // console.log(j)
         callback(undefined,{
             latatiude:j[0].lat,
-            longitude:j[0].lon
+            longitude:j[0].lon,
+            address:j[0].display_name
         })
         }
 })
